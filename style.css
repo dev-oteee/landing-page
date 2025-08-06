@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  pointer-events: auto;
+  zoom: reset;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 50% de opacidade */
+  z-index: -1;
+}
+
+.content {
+  display: block;
+  text-align: center;
+  width: 160%;
+  max-width: 450px;
+}
+
+.avatar {
+  width: 40vw;
+  max-width: 250px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  margin-bottom: 30px;
+  transition: all 6s ease-in-out;
+}
+
+.avatar:hover{
+  cursor: pointer;
+font-weight: 500;
+border: 6px solid white;
+  background: #ffffff;
+  color: #596f8b;
+  box-shadow: 0 1px  80px #FFFAFA;
+  transition: all 3s ease-in-out;
+
+}
+
+.nome {
+  padding-bottom: 30px;
+  color: #FFFAFA
+}
+
+.btn {
+
+  padding: 15px;
+  background-color: #28323e;
+  color: #fffafa;
+  box-shadow: 0 0.2px 5px #4155525f;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: all 1s ease-in-out;
+  width: 90%;
+  display: flexbox;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.btn:hover {
+  font-weight: 500;
+  border: 6px solid white;
+  border-radius: 35px;
+  background: #ffffff;
+  color: #596f8b;
+  box-shadow: 0 1px  20px #FFFAFA;
+  transition: all 1s ease-in-out;
+
+}
+
+@media screen and (max-width: 480px) {
+  .avatar {
+    width: 50vw;
+    max-width: 150px;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 14px;
+  }
+}
+
+.btn i {
+  position: absolute;
+  left: 25px;
+}
+
+.rodape {
+   all: unset;
+  position: fixed;  
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.criative{
+text-decoration: none;
+color: inherit;
+font-weight: 500;
+font-size: 115%;
+}
